@@ -11,6 +11,11 @@ import copa_campeoes from "../assets/images/2023/copa_campeoes.png";
 import copa_nego_dao from "../assets/images/2023/copa_nego_dao.png";
 import copa_cesinha from "../assets/images/2023/copa_cesinha.jpg";
 import gavioes_do_morro from "../assets/images/2023/gavioes_do_morro.jpeg";
+import copa_amizade_2021 from "../assets/images/2021/copa_amizade_2021.png";
+import copa_cidade_2021 from "../assets/images/2021/copa_cidade_2021.png";
+import copa_hortolandia_2021 from "../assets/images/2021/copa_hortolandia_2021.jpg";
+import parma from "../assets/images/2021/parma.jpeg";
+import paviotti from "../assets/images/2021/paviotti.jpeg";
 
 export const Achievements = () => {
   return (
@@ -59,7 +64,7 @@ export const Achievements = () => {
                         alt="Logo da Equipe"
                       />
                     </a>
-                    Rosalia F. C.
+                    <p>Rosalia F. C.</p>
                   </td>
                 </tr>
               </tbody>
@@ -104,7 +109,7 @@ export const Achievements = () => {
                         alt="Foto Troféu"
                       />
                     </a>
-                    Unidos do Coco F. C.
+                    <p>Unidos do Coco F. C.</p>
                   </td>
                 </tr>
                 <tr>
@@ -134,7 +139,7 @@ export const Achievements = () => {
                         alt="Foto Troféu"
                       />
                     </a>
-                    Gavioes do Morro
+                    <p>Gavioes do Morro</p>
                   </td>
                 </tr>
                 <tr>
@@ -164,7 +169,7 @@ export const Achievements = () => {
                         alt="Foto Troféu"
                       />
                     </a>
-                    Rosalia F. C.
+                    <p>Rosalia F. C.</p>
                   </td>
                 </tr>
               </tbody>
@@ -191,7 +196,7 @@ export const Achievements = () => {
                     >
                       <img
                         className="equipe__campea"
-                        src={pinheiros}
+                        src={copa_cidade_2021}
                         alt="Escudo da Equipe Campeã"
                       />
                     </a>
@@ -205,11 +210,11 @@ export const Achievements = () => {
                     >
                       <img
                         className="equipe__campea"
-                        src={Copa_Hortolandia_2019}
+                        src={parma}
                         alt="Foto Troféu"
                       />
                     </a>
-                    Parma F. C.
+                    <p>Parma F. C.</p>
                   </td>
                 </tr>
                 <tr>
@@ -221,11 +226,11 @@ export const Achievements = () => {
                     >
                       <img
                         className="equipe__campea"
-                        src={pinheiros}
+                        src={copa_amizade_2021}
                         alt="Escudo da Equipe Campeã"
                       />
                     </a>
-                    <p>Copa Cidade</p>
+                    <p>Copa Amizade</p>
                   </td>
                   <td>
                     <a
@@ -235,15 +240,14 @@ export const Achievements = () => {
                     >
                       <img
                         className="equipe__campea"
-                        src={Copa_Hortolandia_2019}
+                        src={unidos_coco}
                         alt="Foto Troféu"
                       />
                     </a>
-                    Unidos do Coco
+                    <p>Unidos do Coco</p>
                   </td>
                 </tr>
                 <tr>
-                  <td>Copa Hortolandia</td>
                   <td>
                     <a
                       href="https://www.facebook.com/primeiracopahortolandia"
@@ -252,11 +256,25 @@ export const Achievements = () => {
                     >
                       <img
                         className="equipe__campea"
-                        src={Copa_Hortolandia_2019}
+                        src={copa_hortolandia_2021}
                         alt="Foto Troféu"
                       />
                     </a>
-                    Unidos do Paviotti
+                    <p>Copa Hortolandia</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={paviotti}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Unidos do Paviotti</p>
                   </td>
                 </tr>
               </tbody>
@@ -301,7 +319,7 @@ export const Achievements = () => {
                         alt="Foto Troféu"
                       />
                     </a>
-                    Pinheiros F. C.
+                    <p>Pinheiros F. C.</p>
                   </td>
                 </tr>
               </tbody>
