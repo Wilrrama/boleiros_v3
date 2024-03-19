@@ -16,6 +16,16 @@ import copa_cidade_2021 from "../assets/images/2021/copa_cidade_2021.png";
 import copa_hortolandia_2021 from "../assets/images/2021/copa_hortolandia_2021.jpg";
 import parma from "../assets/images/2021/parma.jpeg";
 import paviotti from "../assets/images/2021/paviotti.jpeg";
+import copa_sp_2022 from "../assets/images/2022/copa_sp_2022.png";
+import copa_hortolandia_2022 from "../assets/images/2022/copa_hortolandia_2022.jpg";
+import copa_amizade_2022 from "../assets/images/2022/copa_amizade_2022.png";
+import copa_ouro_2022 from "../assets/images/2022/copa_ouro_2022.jpg";
+import copa_cesinha_2022 from "../assets/images/2022/copa_cesinha_2022.jpg";
+import viela_esporte_clube from "../assets/images/2022/viela_esporte_clube.jpeg";
+import juventude from "../assets/images/2022/juventude.jpeg";
+import red_bull_sumare from "../assets/images/2022/red_bull_sumare.jpeg";
+import atletico_ongaro from "../assets/images/2022/atletico_ongaro.png";
+import cruzeiro from "../assets/images/2022/cruzeiro.jpg";
 
 export const Achievements = () => {
   return (
@@ -170,6 +180,171 @@ export const Achievements = () => {
                       />
                     </a>
                     <p>Rosalia F. C.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+        <section className="vinte__um">
+          <details>
+            <summary>2022</summary>
+            <table>
+              <thead>
+                <tr>
+                  <th>Competição</th>
+                  <th>Equipe Campeã</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/pinheiros.martins"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={copa_ouro_2022}
+                        alt="Escudo da Equipe Campeã"
+                      />
+                    </a>
+                    <p>Copa Ouro</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={cruzeiro}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Cruzeiro</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/pinheiros.martins"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={copa_cesinha_2022}
+                        alt="Escudo da Equipe Campeã"
+                      />
+                    </a>
+                    <p>Copa Cidade</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={juventude}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Juventude</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/pinheiros.martins"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={copa_amizade_2022}
+                        alt="Escudo da Equipe Campeã"
+                      />
+                    </a>
+                    <p>Copa Amizade</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={red_bull_sumare}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Red Bull</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/pinheiros.martins"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={copa_hortolandia_2022}
+                        alt="Escudo da Equipe Campeã"
+                      />
+                    </a>
+                    <p>Copa Hortolandia</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={atletico_ongaro}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Atlético Ongaro</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={copa_sp_2022}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Copa SP</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={viela_esporte_clube}
+                        alt="Foto Troféu"
+                      />
+                    </a>
+                    <p>Viela</p>
                   </td>
                 </tr>
               </tbody>
