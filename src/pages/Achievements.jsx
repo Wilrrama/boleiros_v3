@@ -26,6 +26,8 @@ import juventude from "../assets/images/2022/juventude.jpeg";
 import red_bull_sumare from "../assets/images/2022/red_bull_sumare.jpeg";
 import atletico_ongaro from "../assets/images/2022/atletico_ongaro.png";
 import cruzeiro from "../assets/images/2022/cruzeiro.jpg";
+import liberdade_logo from "../assets/images/2024/liberdade_logo.png";
+import copa_amizade_2024 from "../assets/images/2024/copa_amizade_2024.jpeg";
 
 export const Achievements = () => {
   return (
@@ -34,8 +36,8 @@ export const Achievements = () => {
       <StyledAchievements>
         <header>
           <h1>Campeonatos Realizados</h1>
-          {/* <h2>Campeões</h2> */}
         </header>
+        {/* 2024 */}
         <section className="vinte__um">
           <details>
             <summary>2024</summary>
@@ -77,10 +79,41 @@ export const Achievements = () => {
                     <p>Rosalia F. C.</p>
                   </td>
                 </tr>
+                <tr>
+                  <td className="competicao__logo">
+                    <a
+                      href="https://www.facebook.com/primeiracopahortolandia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={copa_amizade_2024}
+                        alt="Logo do Campeonato"
+                      />
+                    </a>
+                    <p>Copa Amizade</p>
+                  </td>
+                  <td>
+                    <a
+                      href="https://www.facebook.com/pinheiros.martins"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        className="equipe__campea"
+                        src={liberdade_logo}
+                        alt="Logo da Equipe"
+                      />
+                    </a>
+                    <p>Liberdade</p>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </details>
         </section>
+        {/* 2023 */}
         <section className="vinte__um">
           <details>
             <summary>2023</summary>
@@ -186,6 +219,7 @@ export const Achievements = () => {
             </table>
           </details>
         </section>
+        {/* 2022 */}
         <section className="vinte__um">
           <details>
             <summary>2022</summary>
@@ -351,6 +385,7 @@ export const Achievements = () => {
             </table>
           </details>
         </section>
+        {/* 2021 */}
         <section className="vinte__um">
           <details>
             <summary>2021</summary>
@@ -456,6 +491,7 @@ export const Achievements = () => {
             </table>
           </details>
         </section>
+        {/* 2019 */}
         <section className="vinte__um">
           <details>
             <summary>2019</summary>

@@ -42,8 +42,9 @@ export const StyledMain = styled.main`
       display: flex;
       margin-left: 10px;
       padding: 10px;
-      width: 80%;
+      width: 77%;
       height: 40px;
+      margin-left: 3%;
     }
 
     button {

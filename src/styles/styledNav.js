@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const StyledNav = styled.nav`
   display: flex;
-  gap: 25px;
+  gap: 15px;
   margin-top: 15px;
 
   button {

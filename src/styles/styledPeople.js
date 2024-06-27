@@ -20,19 +20,21 @@ export const StyledMain = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 90px;
 
   h1 {
     margin: 5px;
-    color: #ffff;
+    color: #fff;
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
       -1px -1px 0 #000;
-
     font-size: 20px;
     align-self: center;
     display: flex;
     align-items: center;
   }
+
   form {
     display: flex;
     width: 100%;
@@ -40,15 +42,27 @@ export const StyledMain = styled.main`
     justify-content: center;
     margin-bottom: 10px;
     gap: 5px;
-    input {
-      display: flex;
+
+    .input__nome {
       padding: 10px;
-      width: 80%;
+      width: 37%;
+      height: 40px;
+      margin-left: 3%;
+    }
+
+    .input__numero {
+      padding: 10px;
+      width: 15%;
+      height: 40px;
+    }
+
+    select {
+      width: 25%;
       height: 40px;
     }
 
     button {
-      color: #ffff;
+      color: #fff;
       font-size: 30px;
 
       &:hover {
@@ -58,7 +72,7 @@ export const StyledMain = styled.main`
   }
 
   p {
-    color: #ffff;
+    color: #fff;
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
       -1px -1px 0 #000;
   }
@@ -69,29 +83,76 @@ export const StyledMain = styled.main`
     gap: 3px;
     justify-content: center;
     margin-right: 10px;
+    font-weight: bold;
+    .number__list {
+      font-weight: 800;
+      //color: #800080;
+    }
 
     li {
       color: white;
       text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
         -1px -1px 0 #000;
-      button {
-        border: 1px solid #ab1f3e;
+
+      .role__list {
+        color: #2ebdbd;
+      }
+      .list__number {
+        color: #1e90ff;
+      }
+      .button__edit {
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffa500;
         border-radius: 4px;
-        width: 60px;
+        width: 40px;
         height: 30px;
-        margin-left: 20px;
-        color: #ab1f3e;
-        font-size: 12px;
-        color: #ffff;
+        margin-left: 5px;
+        font-size: 20px;
+        color: #fff;
+        background: #ffa500;
+
+        &:hover {
+          border: 1px solid #fff;
+        }
+      }
+
+      .button__remove {
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ab1f3e;
+        border-radius: 4px;
+        width: 40px;
+        height: 30px;
+        margin-left: 5px;
+        font-size: 20px;
+        color: #fff;
         background: #ab1f3e;
 
         &:hover {
-          border: 1px solid #ffff;
-          /*background: #ab1f3e; */
+          border: 1px solid #fff;
+        }
+      }
+
+      .button__save__edit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ffa500;
+        border-radius: 4px;
+        width: 40px;
+        height: 30px;
+        margin-left: 5px;
+        font-size: 20px;
+        color: #fff;
+        background: #ffa500;
+
+        &:hover {
+          border: 1px solid #fff;
         }
       }
       span {
-        color: #ffff;
+        color: #fff;
         text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
           -1px -1px 0 #000;
       }

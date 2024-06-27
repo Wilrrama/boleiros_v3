@@ -25,13 +25,23 @@ export const StyledAchievements = styled.main`
 
   header {
     h1 {
+      color: #fff;
+      text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+        -1px -1px 0 #000;
       font-size: 25px;
+      padding-bottom: 5px;
     }
-    h2 {
-      text-align: center;
-      font-size: 25px;
-      padding-bottom: 15px;
-    }
+  }
+
+  details {
+    padding-bottom: 5px;
+  }
+
+  summary {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+      -1px -1px 0 #000;
+    font-size: 20px;
   }
 
   .vinte__um table {
@@ -44,7 +54,8 @@ export const StyledAchievements = styled.main`
   .vinte__um td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    color: white;
   }
 
   .vinte__um th {
@@ -56,6 +67,7 @@ export const StyledAchievements = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .equipe__campea {

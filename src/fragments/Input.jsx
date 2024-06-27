@@ -1,21 +1,24 @@
 export const Input = ({
+  className,
   label,
   id,
   type = "text",
-  setValueName,
+  setValue,
   value,
   placeholder,
+  required,
 }) => {
   return (
     <>
       <label htmlFor={id}>{label}</label>
       <input
+        className={className}
         placeholder={placeholder}
         type={type}
         id={id}
         value={value}
-        onChange={(event) => setValueName(event.target.value)}
-        required
+        onChange={(event) => setValue(event.target.value)}
+        required={required}
       />
     </>
   );

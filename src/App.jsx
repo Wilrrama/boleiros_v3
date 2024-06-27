@@ -8,9 +8,12 @@ import { NameProvider } from "./contexts/NameContext";
 import { ChoreProvider } from "./contexts/ChoreContext";
 import { Achievements } from "./pages/Achievements";
 import { Footer } from "./components/Footer";
+import { Games } from "./pages/Games";
+import { Formation } from "./pages/Formation";
 
 export const App = ({ toggleTheme }) => {
-  const [activeSection, setActiveSection] = useState("sellballs");
+  const [activeSection, setActiveSection] = useState("chores");
+
   return (
     <>
       <Header toggleTheme={toggleTheme}>
@@ -27,6 +30,10 @@ export const App = ({ toggleTheme }) => {
         </NameProvider>
       ) : activeSection === "achievements" ? (
         <Achievements />
+      ) : activeSection === "games" ? (
+        <Games />
+      ) : activeSection === "formation" ? (
+        <Formation />
       ) : (
         <ChoreProvider>
           <Chores />

@@ -14,6 +14,13 @@ export const NameProvider = ({ children }) => {
     setNameList(newNameList);
   };
 
+  const editName = (id, updatedName) => {
+    const updatedList = nameList.map((name) =>
+      name.id === id ? { ...name, ...updatedName } : name
+    );
+    setNameList(updatedList);
+  };
+
   const removeAll = () => {
     const confirmed = window.confirm("Deseja realmente limpar a lista?");
     if (confirmed) {
@@ -38,6 +45,7 @@ export const NameProvider = ({ children }) => {
         nameList,
         addName,
         removeName,
+        editName,
         removeAll,
       }}
     >
