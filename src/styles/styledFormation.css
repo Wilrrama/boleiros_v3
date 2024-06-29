@@ -1,0 +1,67 @@
+.title {
+  text-align: center;
+}
+
+.area-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-height: 80vh;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+.button_container .button {
+  background-color: #4caf50; /* Cor de fundo */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibição inline-block */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor ao passar sobre o botão */
+  border-radius: 12px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave ao passar sobre o botão */
+}
+
+.button_container .button:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização para outros botões */
+.button_container button {
+  background-color: #008cba; /* Cor de fundo */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibição inline-block */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margem */
+  cursor: pointer; /* Cursor ao passar sobre o botão */
+  border-radius: 12px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave ao passar sobre o botão */
+}
+
+.button_container button:hover {
+  background-color: #007bb5; /* Cor de fundo ao passar o mouse */
+}
