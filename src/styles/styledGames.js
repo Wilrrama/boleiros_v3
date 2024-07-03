@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import guia from "../assets/images/fundo_Games.jpg";
 import guia2 from "../assets/images/fundo_games.webp";
 
 export const BackgroundContainerGames = styled.div`
@@ -32,10 +31,11 @@ export const StyledGames = styled.section`
   }
 
   img {
-    width: 60%;
+    width: 70%;
     display: block;
     margin: 0 auto;
     border-radius: 8px;
+    cursor: pointer;
   }
 
   video {
@@ -50,7 +50,6 @@ export const StyledGames = styled.section`
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-
     color: whitesmoke;
   }
 
