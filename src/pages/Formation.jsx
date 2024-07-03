@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "../styles/styledFormation.css"; // Certifique-se de que este caminho está correto
-import campo from "../assets/images/campo_de_futebol.png"; // Importe a imagem
+import "../styles/styledFormation.css";
+import campo from "../assets/images/campo_de_futebol.png";
+import { BackgroundContainer } from "../styles/styledPeople";
 
 export const Formation = () => {
   const [clickedPoints, setClickedPoints] = useState([]);
@@ -111,9 +112,8 @@ export const Formation = () => {
   return (
     <>
       <div className="title">
-        <h1>Formação</h1>
+        <h1>Formação-Em construção</h1>
       </div>
-
       <div className="button_container">
         <button className="button" onClick={manual}>
           Manual
@@ -126,7 +126,6 @@ export const Formation = () => {
       </div>
 
       <div className="area-container">
-        <div className="background-container"></div>
         <div className="area" onClick={getCoordinates}>
           {clickedPoints.map((clickedPoint, index) => (
             <div

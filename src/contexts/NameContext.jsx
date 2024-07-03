@@ -47,6 +47,7 @@ export const NameProvider = ({ children }) => {
         removeName,
         editName,
         removeAll,
+        setNameList,
       }}
     >
       {children}

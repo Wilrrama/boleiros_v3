@@ -6,12 +6,19 @@ import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { ChoreContext } from "../contexts/ChoreContext";
 import { StyledMain, BackgroundContainer } from "../styles/styledChores";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 export const Chores = () => {
   const [chore, setChore] = useState("");
   const [checkboxes, setCheckboxes] = useState([]);
-  const { chores, saveNewChore, deleteChore, completeTask, removeAllTask } =
-    useContext(ChoreContext);
+  const {
+    chores,
+    saveNewChore,
+    deleteChore,
+    completeTask,
+    removeAllTask,
+    setChores,
+  } = useContext(ChoreContext);
 
   useEffect(() => {
     const storedCheckboxes = JSON.parse(localStorage.getItem("@checkboxes"));
@@ -66,6 +73,14 @@ export const Chores = () => {
     deleteChore(choreId);
   }
 
+  function handleOnDragEnd(result) {
+    if (!result) return;
+    const items = Array.from(chores);
+    const [reorderedItem] = items.splice(result.source.index, 1);
+    items.splice(result.destination.index, 0, reorderedItem);
+    setChores(items);
+  }
+
   return (
     <>
       <BackgroundContainer />
@@ -88,34 +103,54 @@ export const Chores = () => {
         </Form>
 
         <div className="chores-list">
-          <ul>
-            {!chores.length ? (
-              <p>Lista Vazia</p>
-            ) : (
-              chores.map((chore) => (
-                <li key={chore.id}>
-                  <input
-                    type="checkbox"
-                    checked={checkboxes[chore.id] || false}
-                    onChange={() => handleCheckboxChange(chore.id)}
-                  />
-                  <span
-                    style={{
-                      textDecoration: checkboxes[chore.id] && "line-through",
-                    }}
-                  >
-                    {chore.task}
-                  </span>
-                  <button
-                    onClick={() => handleClearItem(chore.id)}
-                    type="button"
-                  >
-                    excluir
-                  </button>
-                </li>
-              ))
-            )}
-          </ul>
+          <DragDropContext onDragEnd={handleOnDragEnd}>
+            <Droppable droppableId="chores">
+              {(provided) => (
+                <ul {...provided.droppableProps} ref={provided.innerRef}>
+                  {!chores.length ? (
+                    <p>Lista Vazia</p>
+                  ) : (
+                    chores.map((chore, index) => (
+                      <Draggable
+                        key={chore.id}
+                        draggableId={chore.id}
+                        index={index}
+                      >
+                        {(provided) => (
+                          <li
+                            ref={provided.innerRef}
+                            {...provided.draggableProps}
+                            {...provided.dragHandleProps}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={checkboxes[chore.id] || false}
+                              onChange={() => handleCheckboxChange(chore.id)}
+                            />
+                            <span
+                              style={{
+                                textDecoration:
+                                  checkboxes[chore.id] && "line-through",
+                              }}
+                            >
+                              {chore.task}
+                            </span>
+                            <button
+                              onClick={() => handleClearItem(chore.id)}
+                              type="button"
+                            >
+                              excluir
+                            </button>
+                          </li>
+                        )}
+                      </Draggable>
+                    ))
+                  )}
+                  {provided.placeholder}
+                </ul>
+              )}
+            </Droppable>
+          </DragDropContext>
         </div>
       </StyledMain>
     </>

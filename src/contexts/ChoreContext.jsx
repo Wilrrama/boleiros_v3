@@ -56,7 +56,14 @@ export const ChoreProvider = ({ children }) => {
 
   return (
     <ChoreContext.Provider
-      value={{ chores, saveNewChore, deleteChore, completeTask, removeAllTask }}
+      value={{
+        chores,
+        saveNewChore,
+        deleteChore,
+        completeTask,
+        removeAllTask,
+        setChores,
+      }}
     >
       {children}
     </ChoreContext.Provider>
