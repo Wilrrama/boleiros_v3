@@ -52,7 +52,7 @@ export const Achievements = () => {
                 <tr>
                   <td className="competicao__logo">
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://copafacil.com/-jlte"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -66,7 +66,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://rosaliafc.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -82,7 +82,7 @@ export const Achievements = () => {
                 <tr>
                   <td className="competicao__logo">
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://copafacil.com/-k0vu5"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -96,7 +96,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://liberdade.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -128,7 +128,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-ndhopxi1t_mvk1odc9x"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -142,7 +142,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://unidos-do-coco.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -158,7 +158,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-n_1nl6emnj6solun6yx"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -172,7 +172,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/gavioes.domorro.1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -188,7 +188,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-njggaylv0_wkdqlgnxj"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -202,7 +202,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://rosaliafc.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -234,7 +234,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-nbndqui6x3zj7xjxud4"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -248,7 +248,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/profile.php?id=100085427627961"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -264,7 +264,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-n6thiyf7i59jtrdhnvt"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -278,7 +278,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/profile.php?id=100068668375018"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -294,7 +294,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-n-uc1obj6gwd3hzzexg"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -308,7 +308,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/profile.php?id=100064321773308"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -324,7 +324,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-mwy7tfjjexau96dzva9"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -338,7 +338,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/profile.php?id=100063776688427"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -354,7 +354,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://copafacil.com/-mspprous80cfspylsur"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -368,7 +368,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/vielaesporte2017"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -400,7 +400,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-mkdghzdeizzpusa_weq"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -414,7 +414,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/fc.parma.79"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -430,7 +430,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/pinheiros.martins"
+                      href="https://copafacil.com/-mexbyez273umarj7b91"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -444,7 +444,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://unidos-do-coco.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -460,7 +460,7 @@ export const Achievements = () => {
                 <tr>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://copafacil.com/-mbezpbpvi_vx-j7d5f0"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -474,7 +474,7 @@ export const Achievements = () => {
                   </td>
                   <td>
                     <a
-                      href="https://www.facebook.com/primeiracopahortolandia"
+                      href="https://www.facebook.com/paviotti.paviotti.5"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
