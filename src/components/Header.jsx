@@ -21,7 +21,12 @@ export const Header = ({ children, toggleTheme }) => {
   return (
     <>
       <StyledHeader>
-        <img src={logo} alt="Logotipo da Liga Hortolandense" />
+        <a
+          href="https://www.facebook.com/profile.php?id=61555954481148"
+          target="_blank"
+        >
+          <img src={logo} alt="Logotipo da Liga Hortolandense" />
+        </a>
         <div>
           <h1>LIGA HORTOLANDENSE</h1>
           <h1>FUTEBOL AMADOR</h1>

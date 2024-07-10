@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 import fundo from "../assets/images/fundoazul.webp";
 
 export const BackgroundContainer = styled.div`
@@ -11,89 +11,91 @@ export const BackgroundContainer = styled.div`
   background-image: url(${fundo});
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
   filter: brightness(50%) contrast(60%) saturate(200%);
 `;
 
 export const StyledMain = styled.main`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   padding-top: 15px;
   margin-bottom: 100px;
-  div.title {
+
+  .title {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+
     h1,
-    h2,
+    p,
     h3 {
       color: whitesmoke;
       text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
         -1px -1px 0 #000;
     }
+
     a {
       text-decoration: none;
     }
+
     h1 {
       font-size: 20px;
     }
+
     h3 {
       font-size: 15px;
     }
+
     button {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      img {
-        width: 30px;
-      }
-      border: 2px;
+      border: 2px solid whitesmoke;
       border-radius: 4px;
-      border-color: whitesmoke;
       width: 100px;
       height: 30px;
       color: whitesmoke;
       background-color: green;
+
+      img {
+        width: 30px;
+      }
     }
   }
 
-  ul.products {
-    margin-top: 10px;
+  ul {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    h3 {
+    gap: 10px;
+    li {
+      display: flex;
+      flex-direction: column;
       color: whitesmoke;
-      text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
-        -1px -1px 0 #000;
-    }
-    img {
-      width: 80px;
+      align-items: center;
+      gap: 5px;
     }
   }
-  li.product {
-    display: flex;
+
+  .swiper {
+    z-index: 0;
+    width: 70%;
+    position: relative;
     align-items: center;
-    margin-left: 15%;
+    display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    gap: 5px;
-    p {
-      color: whitesmoke;
-    }
-    h3 {
-      font-size: 16px;
-      color: whitesmoke;
-      text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
-        -1px -1px 0 #000;
+
+    .swiper__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     img {
-      width: 80px;
+      width: 60%;
+      object-fit: cover;
     }
   }
 `;
