@@ -18,15 +18,6 @@ export const Footer = () => {
           <img src={ksports} alt="" />
         </a>
       </div>
-
-      <div>
-        <a
-          href="https://www.facebook.com/profile.php?id=61555954481148"
-          target="_blank"
-        >
-          <img src={liga} alt="" />
-        </a>
-      </div>
     </StyledFooter>
   );
 };

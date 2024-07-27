@@ -172,31 +172,33 @@ export const People = () => {
                               </Button>
                             </form>
                           ) : (
-                            <div>
-                              <span>
-                                {name.text}{" "}
-                                <span className="number__list">- </span>
+                            <div className="people__container">
+                              <div className="people__name">{name.text}</div>
+                              <div className="people__role">
                                 <span className="role__list">{name.role}</span>
-                                <span className="number__list"> - </span> nº :
+                              </div>
+                              <div className="people__number">
+                                nº :{" "}
                                 <span className="list__number">
-                                  {" "}
                                   {name.number}
                                 </span>
-                              </span>
-                              <Button
-                                className="button__edit"
-                                type="button"
-                                onClick={() => handleEdit(name)}
-                              >
-                                <RiEditFill />
-                              </Button>
-                              <Button
-                                className="button__remove"
-                                type="button"
-                                onClick={() => removeName(name.id)}
-                              >
-                                <TiUserDelete />
-                              </Button>
+                              </div>
+                              <div className="people__buttons">
+                                <Button
+                                  className="button__edit"
+                                  type="button"
+                                  onClick={() => handleEdit(name)}
+                                >
+                                  <RiEditFill />
+                                </Button>
+                                <Button
+                                  className="button__remove"
+                                  type="button"
+                                  onClick={() => removeName(name.id)}
+                                >
+                                  <TiUserDelete />
+                                </Button>
+                              </div>
                             </div>
                           )}
                         </li>

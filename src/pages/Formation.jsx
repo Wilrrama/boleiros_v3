@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/styledFormation.css";
 import campo from "../assets/images/campo_de_futebol.png";
 import { BackgroundContainer } from "../styles/styledPeople";
+import { BackgroundContainerField } from "../styles/formation";
 
 export const Formation = () => {
   const [clickedPoints, setClickedPoints] = useState([]);
@@ -127,21 +128,33 @@ export const Formation = () => {
 
       <div className="area-container">
         <div className="area" onClick={getCoordinates}>
-          {clickedPoints.map((clickedPoint, index) => (
-            <div
-              key={index}
-              style={{
-                left: `${clickedPoint.x}%`,
-                top: `${clickedPoint.y}%`,
-                position: "absolute",
-                width: "20px",
-                height: "20px",
-                backgroundColor: "red",
-                borderRadius: "50%",
-                transform: "translate(-50%, -50%)",
-              }}
-            />
-          ))}
+          <BackgroundContainerField />
+          {clickedPoints.map((clickedPoint, index) => {
+            let backgroundColor = "green";
+            if (clickedPoint.y >= 66) {
+              backgroundColor = "blue";
+            } else if (clickedPoint.y >= 33) {
+              backgroundColor = "green";
+            } else {
+              backgroundColor = "red";
+            }
+
+            return (
+              <div
+                key={index}
+                style={{
+                  left: `${clickedPoint.x}%`,
+                  top: `${clickedPoint.y}%`,
+                  position: "absolute",
+                  width: "20px",
+                  height: "20px",
+                  backgroundColor: backgroundColor,
+                  borderRadius: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
+              />
+            );
+          })}
         </div>
       </div>
     </>

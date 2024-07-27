@@ -49,8 +49,6 @@ export const SellBalls = () => {
         <ul>
           {/* euroPro */}
           <li>
-            <h3>Euro Pro</h3>
-            <p>Bola Profissional</p>
             <Swiper
               slidesPerView={1}
               pagination={{ clickable: true }}
@@ -67,11 +65,11 @@ export const SellBalls = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <h3>Euro Pro</h3>
+            <p>Bola Profissional</p>
           </li>
           {/* euroFibra */}
           <li>
-            <h3>Euro Fribra</h3>
-            <p>Bola Profissional</p>
             <Swiper
               slidesPerView={1}
               pagination={{ clickable: true }}
@@ -88,11 +86,11 @@ export const SellBalls = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <h3>Euro Fribra</h3>
+            <p>Bola Profissional</p>
           </li>
           {/* euroInfinity */}
           <li>
-            <h3>Euro Infinity</h3>
-            <p>Bola Oficial</p>
             <Swiper
               slidesPerView={1}
               pagination={{ clickable: true }}
@@ -109,11 +107,11 @@ export const SellBalls = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <h3>Euro Infinity</h3>
+            <p>Bola Oficial</p>
           </li>
           {/* euroRecreativa */}
           <li>
-            <h3>Euro Recreativa</h3>
-            <p>Criança até 10 anos</p>
             <Swiper
               slidesPerView={1}
               pagination={{ clickable: true }}
@@ -130,6 +128,8 @@ export const SellBalls = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
+            <h3>Euro Recreativa</h3>
+            <p>Criança até 10 anos</p>
           </li>
         </ul>
       </StyledMain>

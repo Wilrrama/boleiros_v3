@@ -80,34 +80,55 @@ export const StyledMain = styled.main`
   ol {
     display: flex;
     flex-direction: column;
-    gap: 3px;
-    justify-content: center;
-    margin-right: 10px;
     font-weight: bold;
-    .number__list {
-      font-weight: 800;
-      //color: #800080;
-    }
+    width: 98%;
+    list-style-type: decimal;
 
     li {
+      margin-left: 7%;
+      margin-bottom: 2px;
       color: white;
       text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
         -1px -1px 0 #000;
-
+      .people__container {
+        display: flex;
+        align-items: end;
+      }
+      .people__name {
+        width: 37%;
+      }
+      .people__role {
+        width: 25%;
+        margin-right: 1%;
+      }
+      .people__number {
+        width: 15%;
+        margin-right: 3%;
+      }
+      .people__buttons {
+        width: 18%;
+        display: flex;
+        justify-content: space-between;
+        gap: 7px;
+      }
       .role__list {
         color: #2ebdbd;
       }
       .list__number {
         color: #1e90ff;
       }
+      .number__list {
+        font-weight: 800;
+        //color: #800080;
+      }
       .button__edit {
         align-items: center;
         justify-content: center;
         border: 1px solid #ffa500;
         border-radius: 4px;
-        width: 40px;
-        height: 30px;
-        margin-left: 5px;
+        width: 30px;
+        height: 25px;
+
         font-size: 20px;
         color: #fff;
         background: #ffa500;
@@ -120,11 +141,10 @@ export const StyledMain = styled.main`
       .button__remove {
         align-items: center;
         justify-content: center;
-        border: 2px solid #ab1f3e;
+        border: 5px solid #ab1f3e;
         border-radius: 4px;
-        width: 40px;
-        height: 30px;
-        margin-left: 5px;
+        width: 30px;
+        height: 25px;
         font-size: 20px;
         color: #fff;
         background: #ab1f3e;
