@@ -206,7 +206,7 @@ export const People = () => {
                     </Draggable>
                   ))
                 ) : (
-                  <p> Nenhum boleiro na lista</p>
+                  <p className="no__people"> Nenhum boleiro na lista</p>
                 )}
                 {provided.placeholder}
               </ol>
