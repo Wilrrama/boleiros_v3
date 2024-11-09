@@ -42,6 +42,11 @@ export const ButtonContainer = styled.div`
       background-color: #007bb5;
     }
 
+    &.active {
+      background-color: #044d07;
+      color: white;
+    }
+
     &.manual {
       background-color: #4caf50;
       font-size: 8px;
@@ -79,12 +84,14 @@ export const FieldArea = styled.div`
 `;
 
 export const PlayerDot = styled.div`
-  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
   background-color: ${(props) => props.color};
-  left: ${(props) => props.x}%;
-  top: ${(props) => props.y}%;
+  cursor: grab;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
 `;

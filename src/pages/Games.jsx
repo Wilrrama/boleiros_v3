@@ -18,6 +18,7 @@ export const Games = () => {
     setShowModal(false);
     setModalImage(null);
   };
+
   return (
     <>
       <BackgroundContainerGames />

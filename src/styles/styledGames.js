@@ -25,39 +25,74 @@ export const StyledGames = styled.section`
   margin-bottom: 60px;
 
   h1 {
-    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
-      -1px -1px 0 #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
     color: whitesmoke;
-  }
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
 
-  img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  video {
-    width: 90%;
-    max-width: 600px;
-    display: block;
-    margin: auto;
-    border-radius: 8px;
+    &:hover {
+      color: #ff6347; /* Tom laranja suave */
+    }
   }
 
   p {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 1.1rem;
     color: whitesmoke;
+    text-align: center;
+    margin: 10px 0 30px;
+    line-height: 1.6;
   }
 
   .game {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 15px;
+    margin-top: 40px;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    video {
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: whitesmoke;
+      text-align: center;
+      margin-top: 10px;
+    }
   }
 `;
