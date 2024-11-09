@@ -4,6 +4,7 @@ import fundo from "../assets/images/campo_de_futeboll.png";
 export const BackgroundContainerField = styled.div`
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
   background-image: url(${fundo});
   background-size: cover;
   background-position: center;

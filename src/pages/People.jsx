@@ -174,6 +174,7 @@ export const People = () => {
                           ) : (
                             <div className="people__container">
                               <div className="people__name">{name.text}</div>
+
                               <div className="people__role">
                                 <span className="role__list">{name.role}</span>
                               </div>

@@ -27,6 +27,7 @@ export const StyledMain = styled.main`
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 
     h1,
     p,
@@ -70,6 +71,7 @@ export const StyledMain = styled.main`
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     li {
       display: flex;
       flex-direction: column;
@@ -95,7 +97,56 @@ export const StyledMain = styled.main`
 
     img {
       width: 60%;
+      max-width: 300px;
       object-fit: cover;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .title {
+      h1 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      button {
+        width: 120px;
+        height: 40px;
+        img {
+          width: 35px;
+        }
+      }
+    }
+
+    ul li .swiper img {
+      width: 50%;
+      max-width: 200px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .title {
+      gap: 15px;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+
+    .swiper {
+      width: 50%;
+    }
+
+    .swiper img {
+      width: 40%;
+      max-width: 180px;
     }
   }
 `;

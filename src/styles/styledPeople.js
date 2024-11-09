@@ -3,7 +3,7 @@ import campo from "../assets/images/campo_de_futebol.png";
 
 export const BackgroundContainer = styled.div`
   position: fixed;
-  top: 0;
+  top: 4;
   left: 0;
   width: 100%;
   height: 100%;
@@ -46,19 +46,19 @@ export const StyledMain = styled.main`
     .input__nome {
       padding: 10px;
       width: 37%;
-      height: 40px;
+      height: 30px;
       margin-left: 3%;
     }
 
     .input__numero {
       padding: 10px;
       width: 15%;
-      height: 40px;
+      height: 30px;
     }
 
     select {
       width: 25%;
-      height: 40px;
+      height: 30px;
     }
 
     button {
@@ -86,6 +86,8 @@ export const StyledMain = styled.main`
     list-style-type: decimal;
 
     li {
+      padding-bottom: 2px;
+      background: rgba(0, 0, 0, 0.5);
       margin-left: 7%;
       margin-bottom: 2px;
       color: white;
@@ -129,7 +131,6 @@ export const StyledMain = styled.main`
         border-radius: 4px;
         width: 30px;
         height: 25px;
-
         font-size: 20px;
         color: #fff;
         background: #ffa500;

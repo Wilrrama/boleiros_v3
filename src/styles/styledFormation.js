@@ -1,12 +1,12 @@
 import { styled } from "styled-components";
 
 export const BackgroundContainerFormation = styled.div`
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  width: 100vh;
+  height: 100vh;
+  z-index: -1; */
   background-image: url(${guia});
   background-size: cover;
   background-position: center;

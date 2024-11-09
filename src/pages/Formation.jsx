@@ -1,13 +1,101 @@
 import React, { useState } from "react";
-import "../styles/styledFormation.css";
-import campo from "../assets/images/campo_de_futebol.png";
-import { BackgroundContainer } from "../styles/styledPeople";
-import { BackgroundContainerField } from "../styles/formation";
+import styled from "styled-components";
+import campo from "../assets/images/campo_de_futeboll.png";
+
+// Styled Components
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+`;
+
+const Title = styled.div`
+  text-align: center;
+  margin: 20px 0;
+
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+
+  button {
+    background-color: #008cba;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #007bb5;
+    }
+
+    &.manual {
+      background-color: #4caf50;
+      font-size: 8px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+`;
+
+const AreaContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 160px); // Ajustado para considerar título e botões
+  margin-bottom: 80px;
+  padding: 0 20px;
+`;
+
+const FieldArea = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px; // Limita a largura máxima
+  aspect-ratio: 3/4; // Mantém proporção do campo
+  border: 2px solid black;
+  border-radius: 4px;
+  position: relative;
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
+
+const PlayerDot = styled.div`
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: ${(props) => props.color};
+  left: ${(props) => props.x}%;
+  top: ${(props) => props.y}%;
+`;
 
 export const Formation = () => {
   const [clickedPoints, setClickedPoints] = useState([]);
 
-  function getCoordinates(e) {
+  const getCoordinates = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const { clientX, clientY } = e;
     const x = ((clientX - rect.left) / rect.width) * 100;
@@ -17,15 +105,21 @@ export const Formation = () => {
       setClickedPoints((prevPoints) => [...prevPoints, { x, y }]);
     } else {
       alert("O Elenco já tem 11 jogadores.");
-      console.log(clickedPoints);
     }
-  }
+  };
 
-  function manual() {
+  const getPlayerColor = (y) => {
+    if (y >= 66) return "#0066cc"; // Azul para defesa
+    if (y >= 33) return "#00cc00"; // Verde para meio-campo
+    return "#cc0000"; // Vermelho para ataque
+  };
+
+  const manual = () => {
     setClickedPoints([]);
-  }
+  };
 
-  function show442aCoordinates() {
+  // Mantive suas funções de formações existentes
+  const show442aCoordinates = () => {
     const coordinates = [
       { x: 46.2042786530901, y: 96.58536523338256 },
       { x: 5.141474991064815, y: 84.99999937972402 },
@@ -40,7 +134,7 @@ export const Formation = () => {
       { x: 59.66183615577065, y: 7.15447092443947 },
     ];
     setClickedPoints(coordinates.slice(0, 11));
-  }
+  };
 
   function show442bCoordinates() {
     const coordinates = [
@@ -111,12 +205,13 @@ export const Formation = () => {
   }
 
   return (
-    <>
-      <div className="title">
+    <Container>
+      <Title>
         <h1>Formação-Em construção</h1>
-      </div>
-      <div className="button_container">
-        <button className="button" onClick={manual}>
+      </Title>
+
+      <ButtonContainer>
+        <button className="manual" onClick={manual}>
           Manual
         </button>
         <button onClick={show442aCoordinates}>4-4-2a</button>
@@ -124,39 +219,24 @@ export const Formation = () => {
         <button onClick={show433Coordinates}>4-3-3</button>
         <button onClick={show343Coordinates}>3-4-3</button>
         <button onClick={show352Coordinates}>3-5-2</button>
-      </div>
+        {/* Adicione os outros botões aqui */}
+      </ButtonContainer>
 
-      <div className="area-container">
-        <div className="area" onClick={getCoordinates}>
-          <BackgroundContainerField />
-          {clickedPoints.map((clickedPoint, index) => {
-            let backgroundColor = "green";
-            if (clickedPoint.y >= 66) {
-              backgroundColor = "blue";
-            } else if (clickedPoint.y >= 33) {
-              backgroundColor = "green";
-            } else {
-              backgroundColor = "red";
-            }
-
-            return (
-              <div
-                key={index}
-                style={{
-                  left: `${clickedPoint.x}%`,
-                  top: `${clickedPoint.y}%`,
-                  position: "absolute",
-                  width: "20px",
-                  height: "20px",
-                  backgroundColor: backgroundColor,
-                  borderRadius: "50%",
-                  transform: "translate(-50%, -50%)",
-                }}
-              />
-            );
-          })}
-        </div>
-      </div>
-    </>
+      <AreaContainer>
+        <FieldArea
+          onClick={getCoordinates}
+          backgroundImage={campo} // Sua imagem importada do campo
+        >
+          {clickedPoints.map((point, index) => (
+            <PlayerDot
+              key={index}
+              x={point.x}
+              y={point.y}
+              color={getPlayerColor(point.y)}
+            />
+          ))}
+        </FieldArea>
+      </AreaContainer>
+    </Container>
   );
 };
