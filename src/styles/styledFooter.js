@@ -19,8 +19,8 @@ export const StyledFooter = styled.footer`
   }
 
   .logo__rony {
-    width: 100px;
-    height: 60px;
+    width: 80px;
+    height: 20px;
   }
 
   img {

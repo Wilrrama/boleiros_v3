@@ -7,7 +7,7 @@ import { SellBalls } from "./pages/SellBalls";
 import { NameProvider } from "./contexts/NameContext";
 import { ChoreProvider } from "./contexts/ChoreContext";
 import { Achievements } from "./pages/Achievements";
-import { Footer } from "./components/Footer";
+// import { Footer } from "./components/Footer";
 import { Games } from "./pages/Games";
 import { Formation } from "./pages/Formation";
 
@@ -33,13 +33,16 @@ export const App = ({ toggleTheme }) => {
       ) : activeSection === "games" ? (
         <Games />
       ) : activeSection === "formation" ? (
-        <Formation />
+        <NameProvider>
+          {" "}
+          <Formation />
+        </NameProvider>
       ) : (
         <ChoreProvider>
           <Chores />
         </ChoreProvider>
       )}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

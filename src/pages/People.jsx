@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { GiSoccerBall } from "react-icons/gi";
 import { AiOutlineClear } from "react-icons/ai";
 import { RiEditFill } from "react-icons/ri";
@@ -9,6 +9,7 @@ import { NameContext } from "../contexts/NameContext";
 import { Input } from "../fragments/Input";
 import { Form } from "../fragments/Form";
 import { Button } from "../fragments/Button";
+import { DragHandle } from "../fragments/DragHandle";
 import { StyledMain, BackgroundContainer } from "../styles/styledPeople";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
@@ -85,7 +86,7 @@ export const People = () => {
             </option>
             <option value="Comissão">Comissão</option>
             <option value="Goleiro">Goleiro</option>
-            <option value="Defensor">Defensor</option>
+            <option value="Zagueiro">Zagueiro</option>
             <option value="Lateral">Lateral</option>
             <option value="Volante">Volante</option>
             <option value="Meia">Meia</option>
@@ -121,12 +122,17 @@ export const People = () => {
                       draggableId={name.id}
                       index={index}
                     >
-                      {(provided) => (
+                      {(provided, snapshot) => (
                         <li
                           ref={provided.innerRef}
                           {...provided.draggableProps}
                           {...provided.dragHandleProps}
+                          data-rbd-dragging={snapshot.isDragging}
                         >
+                          <div style={{ display: "none" }}>
+                            <DragHandle />
+                          </div>
+
                           {editId === name.id ? (
                             <form onSubmit={handleSubmit}>
                               <Input
@@ -149,7 +155,7 @@ export const People = () => {
                                 </option>
                                 <option value="Comissão">Comissão</option>
                                 <option value="Goleiro">Goleiro</option>
-                                <option value="Defensor">Defensor</option>
+                                <option value="Zagueiro">Zagueiro</option>
                                 <option value="Lateral">Lateral</option>
                                 <option value="Volante">Volante</option>
                                 <option value="Meia">Meia</option>
@@ -176,10 +182,14 @@ export const People = () => {
                               <div className="people__name">{name.text}</div>
 
                               <div className="people__role">
-                                <span className="role__list">{name.role}</span>
+                                <span
+                                  className="role__list"
+                                  data-role={name.role}
+                                >
+                                  {name.role}
+                                </span>
                               </div>
                               <div className="people__number">
-                                nº :{" "}
                                 <span className="list__number">
                                   {name.number}
                                 </span>
